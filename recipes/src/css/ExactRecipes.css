@@ -1,0 +1,851 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Phone size */
+@media only screen and (min-width: 320px) {
+    
+    /* The recipe */
+
+    .recipe {
+        position: absolute;
+        top: -7.2rem;
+        left: -5rem;
+        width: 536pt;
+        height: 700pt;
+        background-color: white;
+    }
+
+    /* The header */
+
+    .menu {
+        position: absolute;
+        margin-top: 0rem;
+        margin-left: 0rem;
+        width: 500pt;
+        height: 45pt;
+        background-color: white;
+    }
+
+    .sign {
+        position: absolute;
+        margin-top: 0.6rem;
+        margin-left: 5rem;
+        font-size: 17.5pt;
+        font-weight: 800;
+        font-family: "Roboto", sans-serif;
+        color: rgb(81, 81, 227);
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .logo {
+        position: absolute;
+        margin-top: 0.4rem;
+        margin-left: 19rem;
+        width: 37pt;
+        height: 37pt;
+    }
+
+    /* The image */
+
+    .recipe-image {
+        position: absolute;
+        margin-top: 4rem;
+        margin-left: 0rem;
+        width: 540pt;
+        height: 125pt;
+    }
+
+    /* The meal type*/
+
+    .recipe-meal-types {
+        position: absolute;
+        margin-top: 15rem;
+        margin-left: 4.2rem;
+        text-transform: uppercase;
+        font-family: "Roboto", sans-serif;
+        font-size: 9pt;
+        font-weight: bold;
+        color: #C1BBBB;
+    }
+
+    /* The label */
+
+    .recipe-label {
+        position: absolute;
+        margin-top: 16rem;
+        margin-left: 4.2rem;
+        font-family: "Roboto", sans-serif;
+        font-size: 13pt;
+        font-weight: 600;
+        color: initial;
+    }
+
+    /* The total cooking time */
+
+    .total-time {
+        position: absolute;
+        margin-top: 18rem;
+        margin-left: 4.2rem;
+        font-size: 12pt;
+    }
+
+    .minutes {
+        position: absolute;
+        margin-top: -1.3rem;
+        margin-left: 8.7rem;
+        color: initial;
+        white-space: nowrap;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+
+    /* The servings */
+
+    .servings {
+        position: absolute;
+        margin-top: 19.3rem;
+        margin-left: 4.2rem;
+        font-size: 12pt;
+    }
+
+    .total-servings {
+        position: absolute;
+        margin-top: -1.3rem;
+        margin-left: 4.2rem;
+        color: initial;
+        white-space: nowrap;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+
+    /* The ingredients */
+
+    .ingredients-label {
+        position: absolute;
+        margin-top: 22rem;
+        margin-left: 4.2rem;
+        font-weight: bold;
+        font-size: 11pt;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .ingredients-lines {
+        position: absolute;
+        margin-top: 24rem;
+        margin-left: 4.2rem;
+        font-size: 11pt;
+        flex-wrap: wrap;
+        width: 220pt;
+        background-color: transparent;
+        line-height: 2;
+    }
+
+    .health {
+        position: absolute;
+        margin-top: 15rem;
+        margin-left: 26rem;
+        font-size: 11pt;
+    }
+
+    .health-labels {
+        position: absolute;
+        margin-top: 16.5rem;
+        margin-left: 26rem;
+        background-color: transparent;
+        flex-wrap: wrap;
+        width: 150pt;
+    }
+
+    .recipe-health-labels {
+        padding: 1pt;
+        white-space: nowrap;
+        margin-bottom: 0.4rem;
+        margin-right: 0.5rem;
+        font-size: 7pt;
+        text-transform: uppercase;
+        background-color: rgb(237, 225, 250);
+        color: rgba(191, 163, 222, 0.9);
+        font-weight: bold;
+    }
+
+    .diet {
+        position: absolute;
+        margin-top: 34rem;
+        margin-left: 26rem;
+    }
+
+    .diet-labels-grid {
+        position: absolute;
+        margin-top: 36rem;
+        margin-left: 26rem;
+        background-color: transparent;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .recipes-diet-labels {
+        padding: 1pt;
+        white-space: nowrap;
+        margin-right: 0.5rem;
+        font-size: 7pt;
+        text-transform: uppercase;
+        background-color: hsl(103, 94%, 67%);
+        color: hsla(103, 71%, 40%, 1.0);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .recipe-cautions {
+        position: absolute;
+        margin-top: 37.5rem;
+        margin-left: 26rem;
+        font-size: 11pt;
+    }
+
+    .recipe-cautions-grid {
+        position: absolute;
+        margin-top: 39rem;
+        margin-left: 26rem;
+        background-color: transparent;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .recipe-cautions-labels {
+        padding: 1pt;
+        text-transform: uppercase;
+        white-space: nowrap;
+        font-size: 7pt;
+        font-weight: bold;
+        background-color: #F06E5F;
+        color: #ef2711;
+        opacity: 0.8;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    /* The total nutrients*/
+
+    .total-nutrients {
+        position: absolute;
+        margin-top: 41.5rem;
+        margin-left: 26rem;
+        font-size: inherit;
+        font-weight: bold;
+    }
+
+    .nutrients {
+        position: absolute;
+        margin-top: 45rem;
+        margin-left: 26rem;
+        flex-wrap: wrap;
+        width: 180pt;
+        height: 100pt;
+        background-color: transparent;
+        font-weight: bold;
+        font-size: 7pt;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .nutrien-labels-flex {
+        margin-right: 0.8rem;
+        display: flex;
+        flex-flow: wrap column;
+        background-color: transparent;
+        width: 27pt;
+    }
+
+    .nutrien-labels-flex:last-child {
+        margin-left: 1.8rem;
+        display: flex;
+        flex-flow: wrap column;
+        background-color: transparent;
+        width: 40pt;
+    }
+
+    /* Hover style */
+
+    .hover-style {
+        padding: 0pt 8pt;
+        background-color: #9AC2F5;
+        opacity: 0.5;
+        position: absolute;
+        margin-top: 0.6rem;
+        margin-left: 0.9rem;
+        font-size: 17.5pt;
+        font-weight: 800;
+        font-family: "Roboto", sans-serif;
+        color: rgb(81, 81, 227);
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+/* Tablet size */
+@media only screen and (min-width: 768px) {
+    
+    /* The recipe */
+
+    .recipe {
+        position: absolute;
+        top: -8.5rem;
+        left: -7rem;
+        width: 500pt;
+        height: 700pt;
+        background-color: white;
+    }
+
+    /* The header */
+
+    .menu {
+        position: absolute;
+        margin-top: 0rem;
+        margin-left: 0rem;
+        width: 500pt;
+        height: 45pt;
+        background-color: white;
+    }
+
+    .sign {
+        position: absolute;
+        margin-top: 0.7rem;
+        margin-left: 1.5rem;
+        font-size: 17.5pt;
+        font-weight: 800;
+        font-family: "Roboto", sans-serif;
+        color: rgb(81, 81, 227);
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .logo {
+        position: absolute;
+        margin-top: 0.4rem;
+        margin-left: 19rem;
+        width: 37pt;
+        height: 37pt;
+    }
+
+    /* The image */
+
+    .recipe-image {
+        position: absolute;
+        margin-top: 4rem;
+        margin-left: 0rem;
+        width: 540pt;
+        height: 125pt;
+    }
+
+    /* The meal type*/
+
+    .recipe-meal-types {
+        position: absolute;
+        margin-top: 15rem;
+        margin-left: 1.9rem;
+        text-transform: uppercase;
+        font-family: "Roboto", sans-serif;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #C1BBBB;
+    }
+
+    /* The label */
+
+    .recipe-label {
+        position: absolute;
+        margin-top: 16rem;
+        margin-left: 1.9rem;
+        font-family: "Roboto", sans-serif;
+        font-size: 15pt;
+        font-weight: 600;
+        color: initial;
+    }
+
+    /* The total cooking time */
+
+    .total-time {
+        position: absolute;
+        margin-top: 18rem;
+        margin-left: 1.9rem;
+        font-size: 12pt;
+    }
+
+    .minutes {
+        position: absolute;
+        margin-top: -1.3rem;
+        margin-left: 8.7rem;
+        color: initial;
+        white-space: nowrap;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+
+    /* The servings */
+
+    .servings {
+        position: absolute;
+        margin-top: 19.3rem;
+        margin-left: 1.9rem;
+        font-size: 12pt;
+    }
+
+    .total-servings {
+        position: absolute;
+        margin-top: -1.3rem;
+        margin-left: 4.2rem;
+        color: initial;
+        white-space: nowrap;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+
+    /* The ingredients */
+
+    .ingredients-label {
+        position: absolute;
+        margin-top: 22rem;
+        margin-left: 2rem;
+        font-weight: bold;
+        font-size: 12pt;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .ingredients-lines {
+        position: absolute;
+        margin-top: 24rem;
+        margin-left: 2rem;
+        font-size: 11pt;
+        flex-wrap: wrap;
+        width: 220pt;
+        background-color: transparent;
+        line-height: 2;
+    }
+
+    .health {
+        position: absolute;
+        margin-top: 15rem;
+        margin-left: 25rem;
+        font-size: 11pt;
+    }
+
+    .health-labels {
+        position: absolute;
+        margin-top: 16.5rem;
+        margin-left: 25rem;
+        background-color: transparent;
+        flex-wrap: wrap;
+        width: 150pt;
+    }
+
+    .recipe-health-labels {
+        padding: 1pt;
+        white-space: nowrap;
+        margin-bottom: 0.4rem;
+        margin-right: 0.5rem;
+        font-size: 7pt;
+        text-transform: uppercase;
+        background-color: rgb(237, 225, 250);
+        color: rgba(191, 163, 222, 0.9);
+        font-weight: bold;
+    }
+
+    .diet {
+        position: absolute;
+        margin-top: 34rem;
+        margin-left: 25rem;
+    }
+
+    .diet-labels-grid {
+        position: absolute;
+        margin-top: 36rem;
+        margin-left: 25rem;
+        background-color: transparent;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .recipes-diet-labels {
+        padding: 1pt;
+        white-space: nowrap;
+        margin-right: 0.5rem;
+        font-size: 7pt;
+        text-transform: uppercase;
+        background-color: hsl(103, 94%, 67%);
+        color: hsla(103, 71%, 40%, 1.0);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .recipe-cautions {
+        position: absolute;
+        margin-top: 37.5rem;
+        margin-left: 25rem;
+        font-size: 11pt;
+    }
+
+    .recipe-cautions-grid {
+        position: absolute;
+        margin-top: 39rem;
+        margin-left: 25rem;
+        background-color: transparent;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .recipe-cautions-labels {
+        padding: 1pt;
+        text-transform: uppercase;
+        white-space: nowrap;
+        font-size: 7pt;
+        font-weight: bold;
+        background-color: #F06E5F;
+        color: #ef2711;
+        opacity: 0.8;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    /* The total nutrients*/
+
+    .total-nutrients {
+        position: absolute;
+        margin-top: 41.5rem;
+        margin-left: 25rem;
+        font-size: inherit;
+        font-weight: bold;
+    }
+
+    .nutrients {
+        position: absolute;
+        margin-top: 45rem;
+        margin-left: 25rem;
+        flex-wrap: wrap;
+        width: 200pt;
+        height: 100pt;
+        background-color: transparent;
+        font-weight: bold;
+        font-size: 8pt;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .nutrien-labels-flex {
+        margin-right: 1.1rem;
+        display: flex;
+        flex-flow: wrap column;
+        background-color: transparent;
+        width: 30pt;
+    }
+
+    .nutrien-labels-flex:last-child {
+        margin-left: 1.8rem;
+        display: flex;
+        flex-flow: wrap column;
+        background-color: transparent;
+        width: 40pt;
+    }
+
+    /* Hover style */
+
+    .hover-style {
+        padding: 0pt 8pt;
+        background-color: #9AC2F5;
+        opacity: 0.5;
+        position: absolute;
+        margin-top: 0.6rem;
+        margin-left: 0.9rem;
+        font-size: 17.5pt;
+        font-weight: 800;
+        font-family: "Roboto", sans-serif;
+        color: rgb(81, 81, 227);
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+/* Pc size */
+@media only screen and (min-width: 1024px) {
+    
+    /* The recipe */
+
+    .recipe {
+        position: absolute;
+        top: -8.5rem;
+        left: 10rem;
+        width: 540pt;
+        height: 700pt;
+        background-color: white;
+    }
+
+    /* The header */
+
+    .menu {
+        position: absolute;
+        margin-top: 0rem;
+        margin-left: 0rem;
+        width: 540pt;
+        height: 45pt;
+        background-color: white;
+    }
+
+    .sign {
+        position: absolute;
+        margin-top: 0.6rem;
+        margin-left: 1.5rem;
+        font-size: 17.5pt;
+        font-weight: 800;
+        font-family: "Roboto", sans-serif;
+        color: rgb(81, 81, 227);
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .logo {
+        position: absolute;
+        margin-top: 0.4rem;
+        margin-left: 19rem;
+        width: 37pt;
+        height: 37pt;
+    }
+
+    /* The image */
+
+    .recipe-image {
+        position: absolute;
+        margin-top: 3.7rem;
+        margin-left: 0rem;
+        width: 540pt;
+        height: 125pt;
+    }
+
+    /* The meal type*/
+
+    .recipe-meal-types {
+        position: absolute;
+        margin-top: 15rem;
+        margin-left: 1.9rem;
+        text-transform: uppercase;
+        font-family: "Roboto", sans-serif;
+        font-size: 10pt;
+        font-weight: bold;
+        color: #C1BBBB;
+    }
+
+    /* The label */
+
+    .recipe-label {
+        position: absolute;
+        margin-top: 16rem;
+        margin-left: 1.9rem;
+        font-family: "Roboto", sans-serif;
+        font-size: 15pt;
+        font-weight: 600;
+        color: initial;
+    }
+
+    /* The total cooking time */
+
+    .total-time {
+        position: absolute;
+        margin-top: 18rem;
+        margin-left: 1.9rem;
+        font-size: 12pt;
+    }
+
+    .minutes {
+        position: absolute;
+        margin-top: -1.3rem;
+        margin-left: 8.7rem;
+        color: initial;
+        white-space: nowrap;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+
+    /* The servings */
+
+    .servings {
+        position: absolute;
+        margin-top: 19.3rem;
+        margin-left: 1.9rem;
+        font-size: 12pt;
+    }
+
+    .total-servings {
+        position: absolute;
+        margin-top: -1.3rem;
+        margin-left: 4.2rem;
+        color: initial;
+        white-space: nowrap;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+
+    /* The ingredients */
+
+    .ingredients-label {
+        position: absolute;
+        margin-top: 22rem;
+        margin-left: 2rem;
+        font-weight: bold;
+        font-size: 12pt;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .ingredients-lines {
+        position: absolute;
+        margin-top: 24rem;
+        margin-left: 2rem;
+        font-size: 11pt;
+        flex-wrap: wrap;
+        width: 220pt;
+        background-color: transparent;
+        line-height: 2;
+    }
+
+    .health {
+        position: absolute;
+        margin-top: 15rem;
+        margin-left: 28rem;
+        font-size: 11pt;
+    }
+
+    .health-labels {
+        position: absolute;
+        margin-top: 16.5rem;
+        margin-left: 28rem;
+        background-color: transparent;
+        flex-wrap: wrap;
+        width: 150pt;
+    }
+
+    .recipe-health-labels {
+        padding: 1pt;
+        white-space: nowrap;
+        margin-bottom: 0.4rem;
+        margin-right: 0.5rem;
+        font-size: 7pt;
+        text-transform: uppercase;
+        background-color: rgb(237, 225, 250);
+        color: rgba(191, 163, 222, 0.9);
+        font-weight: bold;
+    }
+
+    .diet {
+        position: absolute;
+        margin-top: 34rem;
+        margin-left: 28rem;
+    }
+
+    .diet-labels-grid {
+        position: absolute;
+        margin-top: 36rem;
+        margin-left: 28rem;
+        background-color: transparent;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .recipes-diet-labels {
+        padding: 1pt;
+        white-space: nowrap;
+        margin-right: 0.5rem;
+        font-size: 7pt;
+        text-transform: uppercase;
+        background-color: hsl(103, 94%, 67%);
+        color: hsla(103, 71%, 40%, 1.0);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .recipe-cautions {
+        position: absolute;
+        margin-top: 37.5rem;
+        margin-left: 28rem;
+        font-size: 11pt;
+    }
+
+    .recipe-cautions-grid {
+        position: absolute;
+        margin-top: 39rem;
+        margin-left: 28rem;
+        background-color: transparent;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .recipe-cautions-labels {
+        padding: 1pt;
+        text-transform: uppercase;
+        white-space: nowrap;
+        font-size: 7pt;
+        font-weight: bold;
+        background-color: #F06E5F;
+        color: #ef2711;
+        opacity: 0.8;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    /* The total nutrients*/
+
+    .total-nutrients {
+        position: absolute;
+        margin-top: 41.5rem;
+        margin-left: 28rem;
+        font-size: inherit;
+        font-weight: bold;
+    }
+
+    .nutrients {
+        position: absolute;
+        margin-top: 45rem;
+        margin-left: 28rem;
+        flex-wrap: wrap;
+        width: 200pt;
+        height: 100pt;
+        background-color: transparent;
+        font-weight: bold;
+        font-size: 9pt;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .nutrien-labels-flex {
+        margin-right: 1.5rem;
+        display: flex;
+        flex-flow: wrap column;
+        background-color: transparent;
+        width: 30pt;
+    }
+
+    .nutrien-labels-flex:last-child {
+        margin-left: 1.5rem;
+        display: flex;
+        flex-flow: wrap column;
+        background-color: transparent;
+        width: 40pt;
+    }
+
+    /* Hover style */
+
+    .hover-style {
+        padding: 0pt 8pt;
+        background-color: #9AC2F5;
+        opacity: 0.5;
+        position: absolute;
+        margin-top: 0.6rem;
+        margin-left: 0.9rem;
+        font-size: 17.5pt;
+        font-weight: 800;
+        font-family: "Roboto", sans-serif;
+        color: rgb(81, 81, 227);
+        text-align: center;
+        cursor: pointer;
+    }
+}
